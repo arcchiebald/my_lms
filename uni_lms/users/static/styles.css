@@ -1,0 +1,34 @@
+html {
+    height:100%;
+}
+
+body {
+    height: 100%;
+    background-color:whitesmoke;
+}
+
+
+.centered {
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#upper-container {
+    margin-bottom: 14px;
+    height:125px;
+}
+
+#unilogo {
+    margin-bottom:14px;
+    height:75px;
+    border-radius: 10%;
+}
+
+.form-list {
+    text-align:center; 
+    list-style-type:none; 
+    padding:0px;
+    font-size:15px;
+}

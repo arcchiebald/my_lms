@@ -1,0 +1,51 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}LMS Authorisation{% endblock title %}
+
+{% block body %}
+
+<div class="centered">
+    <div class="card" 
+        style=
+        "width: 300px; 
+        background-color:#1A549E; 
+        text-align:center;
+        border-radius:10px;
+        padding:12px;">
+            <div class="card-body" style="color: white;">
+
+                <div id="upper-container">
+                    <img src="{% static 'kiu_logo.png' %}" alt="Logo of the university." id="unilogo">
+                    <h6>Learning Management System of Kutaisi International University</h6>
+                </div>
+
+                <hr style="color: white; height: 1px; opacity:0.9;">
+                
+                    <form action="{% url "users:login" %}" method="post">
+                        {% csrf_token %}
+                        <ul class="form-list">
+                            <li><p style="font-size: 22px;">Log in:</p></li>
+                            <li><p style="margin-bottom:5px;">Username:</p></li>
+                            <li>{{ form.username }}</li>
+                            <li><p style="margin-top:10px; margin-bottom:5px;">Password:</p></li>
+                            <li>{{ form.password }}</li>   
+                        </ul>
+
+                        <button type="submit" class="btn btn-primary" 
+                            style=
+                            "background-color: #F7FAFF; 
+                            color: black;
+                            border: 0px;"
+                        >
+                            Submit
+                        </button>
+
+                    </form>
+            </div>
+    </div>
+</div>
+
+
+
+{% endblock body %}
