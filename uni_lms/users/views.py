@@ -10,7 +10,7 @@ def login_view(request):
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
             login(request, form.get_user())
-            return redirect("users:test")
+            return redirect("dashboard:mainpage")
         else:
             return HttpResponse("No!")
     else:

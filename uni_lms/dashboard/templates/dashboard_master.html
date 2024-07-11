@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "dstyles.css" %}">
+    <link rel="icon" type="image/x-icon" href="{% static "favicon.ico" %}">
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+
+    {% block body %}{% endblock body %}
+    
+</body>
+</html>
