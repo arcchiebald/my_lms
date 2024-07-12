@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static "dstyles.css" %}">
     <link rel="icon" type="image/x-icon" href="{% static "favicon.ico" %}">
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-    <link rel="stylesheet" href="{% static "styles.css" %}">
+    <link rel="stylesheet" href="{% static "dashboard/dstyles.css" %}">
+    <script src="{% static "dashboard/dashboard_app.js" %}"></script>
     <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>

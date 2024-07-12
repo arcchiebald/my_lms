@@ -1,0 +1,86 @@
+:root {
+    --primarty: #1A549E;
+    --primary_darker: #003D84;
+    --secondary: #008FCA;
+    --secondary_lighter: #5E85D5;
+    --light: #F7F9FF;
+    --text: #424656;
+    --grey100: #A6ABBD;
+    --grey200: #727687;
+}
+
+body {
+    margin:0;
+    height:100%;
+    background-color: var(--light);
+}
+
+hr {
+    color: white; 
+    height: 1px; 
+    opacity:0.9;
+}
+
+div#mainpage-sidenav {
+    position: fixed;
+    width: 0px;
+    height:100%;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-color: var(--primary_darker);
+    color:var(--light);
+    overflow-x: hidden;
+    padding-top: 25px;
+    transition: 0.5s;
+}
+
+#content {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+#profile-card {
+    width: 300px;
+    background-color: #1A549E;
+    padding: 10px;   
+    display:flex;
+    align-items:center;
+    text-align:left;
+    color: var(--light)
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-sec {
+    color: var(--light);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+.btn:hover {
+    filter: brightness(90%)
+}
