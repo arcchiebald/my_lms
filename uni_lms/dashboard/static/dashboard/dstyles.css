@@ -1,5 +1,5 @@
 :root {
-    --primarty: #1A549E;
+    --primary: #1A549E;
     --primary_darker: #003D84;
     --secondary: #008FCA;
     --secondary_lighter: #5E85D5;
@@ -21,23 +21,9 @@ hr {
     opacity:0.9;
 }
 
-div#mainpage-sidenav {
-    position: fixed;
-    width: 0px;
-    height:100%;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
-    background-color: var(--primary_darker);
-    color:var(--light);
-    overflow-x: hidden;
-    padding-top: 25px;
-    transition: 0.5s;
-}
-
 #content {
     transition: margin-left 0.5s;
-    padding: 20px;
+    padding: 10px;
 }
 
 #profile-card {
@@ -50,6 +36,8 @@ div#mainpage-sidenav {
     color: var(--light)
 }
 
+
+/* Button style from Bootstrap */
 .btn{
     display: inline-block;
     font-weight: 400;
@@ -83,4 +71,42 @@ div#mainpage-sidenav {
 
 .btn:hover {
     filter: brightness(90%)
+}
+
+#top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left:10px;
+    margin-right: 5px;
+    height: 80px;
+}
+
+#top-nav img {
+
+    height: 60px;
+}
+
+#top-nav div {
+    margin-left: auto; 
+    margin-right: 0; 
+    padding:10px; 
+    padding-right:20px;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+}
+
+#top-nav div a {
+    text-decoration: none;
+    color: var(--primary_darker);
+    font-size: 20px;
+    font-weight: 600;
+    padding:10px;
+}
+
+#top-nav div a:hover {
+    color: var(--secondary);
 }

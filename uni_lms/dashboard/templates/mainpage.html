@@ -4,38 +4,19 @@
 {% block title %}Dashboard{% endblock title %}
 
 {% block body %}
-
-<div class="sidenav" id="mainpage-sidenav">
-    <button
-        type="button"
-        class="btn btn-sec"
-        onclick="CloseSideNav()"
-    >
-       Close
-    </button>
-</div>
-
-<div id="content">
-    <button
-        type="button"
-        class="btn btn-sec"
-        onclick="OpenSideNav()"
-    >
-        Open Sidenav
-    </button>
     
     <h3>It is the main content!</h3>
 
-    <div
+    {% comment %} <div
         class="card" id="profile-card"
     >
-        <img class="card-img-top" src="{% static "kiu_logo.png" %}" alt="Title" style="width: 100px; "/>
+        <img class="card-img-top" src="{% static "img/kiu_logo.png" %}" alt="Title" style="width: 100px;"/>
         <hr>
         <div class="card-body">
             <h4 class="card-title">Title</h4>
             <p class="card-text">Text</p>
         </div>
-    </div>
+    </div> {% endcomment %}
     
 </div>
 
